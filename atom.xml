@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gridvisi.github.io/ddm.github.io/</id>
     <title>B座17楼</title>
-    <updated>2020-04-13T07:50:25.228Z</updated>
+    <updated>2020-07-07T13:42:29.624Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gridvisi.github.io/ddm.github.io/"/>
     <link rel="self" href="https://gridvisi.github.io/ddm.github.io/atom.xml"/>
@@ -10,6 +10,62 @@
     <logo>https://gridvisi.github.io/ddm.github.io/images/avatar.png</logo>
     <icon>https://gridvisi.github.io/ddm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, B座17楼</rights>
+    <entry>
+        <title type="html"><![CDATA[20200707 Coding camp lecture-1]]></title>
+        <id>https://gridvisi.github.io/ddm.github.io/post/20200707-coding-camp-lecture-1/</id>
+        <link href="https://gridvisi.github.io/ddm.github.io/post/20200707-coding-camp-lecture-1/">
+        </link>
+        <updated>2020-07-07T13:40:15.000Z</updated>
+        <content type="html"><![CDATA[<pre><code class="language-Python">person = [&quot;诸葛亮&quot;, &quot;李张梓霖&quot;,&quot;张李梓沐&quot;,&quot;邓爱希香&quot; ,&quot;李张总领&quot;, &quot;张涵奇&quot;, &quot;周宏宇&quot;, &quot;唐诚心&quot;, &quot;刘一芝&quot;,
+          &quot;汪刚&quot;, &quot;郑嘉&quot;, &quot;龙心&quot;, &quot;谭心&quot;, &quot;邢小台&quot;, &quot;宋雨&quot;,&quot;张吴含&quot;,&quot;张吴&quot;]
+
+# 索引
+huamince = person
+person.append(&quot;杰罗姆&quot;)
+print(&quot;周宏宇的位置：&quot;,person.index(&quot;周宏宇&quot;))
+print(person,huamince)
+
+person.append(&quot;杰罗姆&quot;)
+print(&quot;杰罗姆的位置：&quot;,person.index(&quot;杰罗姆&quot;))
+print(&quot;杰罗姆的位置：&quot;,person.index(&quot;杰罗姆&quot;))
+print(person,huamince)
+
+person.append(&quot;李懿轩&quot;)
+print(&quot;李懿轩的位置：&quot;,person.index(&quot;李懿轩&quot;))
+print(person,huamince)
+
+# 查询名单有没有某人？
+for name in person:
+    if name == &quot;李懿轩&quot;:
+        print(&quot;I found you,liyixuan&quot;)
+    else:
+        pass
+print(&quot;not found&quot;,name)
+
+
+# 添加某同学
+
+pi = 3.1415159265
+pi_str = str(pi)
+print(pi_str[3])
+
+
+print(person[1][0:2])
+
+dual_sur = ['张吴']
+
+for name in person:
+    #print(name)
+    if '张' in name[0] and len(name) &lt;= 3 and name[0:2] not in dual_sur:
+        print('alan lee',name)
+
+name = &quot;蔡徐坤&quot;
+genders = &quot;男&quot;
+print(name,'我只看这一行结果：',genders == &quot;男&quot;)
+print(name == genders)
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://gridvisi.github.io/ddm.github.io/post/hello-gridea/</id>
